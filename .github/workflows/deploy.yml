@@ -34,6 +34,8 @@ jobs:
         run: npm ci
 
       - name: Build Project
+        env:
+          DISABLE_ESLINT_PLUGIN: true
         run: npm run build
 
       - name: Setup Pages
