@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gal Peter | AI-Driven QA Automation Engineer</title>
+<meta name="description" content="Gal Peter: QA engineer with 19+ years of experience, building AI-driven test automation (Python, pytest, Playwright, Appium, LLM agents) and DevOps tooling (Docker, GitHub Actions).">
+<meta name="theme-color" content="#0f766e">
+<meta property="og:title" content="Gal Peter | AI-Driven QA Automation Engineer">
+<meta property="og:description" content="19+ years in QA. AI-driven test automation with Python, Playwright, Appium, Docker and GitHub Actions. See the projects.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Cpath d='M9 17l5 5 9-11' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Gal Peter, home">GP</a>
+    <nav aria-label="Main">
+      <a href="#ai">AI</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme" type="button" id="theme" aria-label="Switch between light and dark theme">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-grid">
+      <div class="hero-text">
+      <p class="eyebrow">AI-Driven QA Automation Engineer</p>
+      <h1>Gal Peter</h1>
+      <p class="lead">I have tested software for 19+ years. Today I build AI-driven test automation: Python, Playwright and Appium suites that run in Docker and GitHub Actions, with AI agents that explore the product, explain failures and report on every run.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="#ai">How I use AI</a>
+        <a class="btn" href="https://github.com/Gal-Peter" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/gal-peter-48a19b97" rel="noopener">LinkedIn</a>
+      </div>
+      </div>
+      <div class="portrait"><span aria-hidden="true">GP</span><img src="assets/gal.jpg" alt="Portrait of Gal Peter" width="320" height="320" onerror="this.remove()"></div>
+      </div>
+      <ul class="stats" aria-label="Highlights">
+        <li><strong>19+</strong><span>years in software QA</span></li>
+        <li><strong>107</strong><span>automated desktop tests, run on 3 browsers</span></li>
+        <li><strong>8</strong><span>mobile tests on an Android emulator</span></li>
+        <li><strong>3</strong><span>AI-powered testing tools, free and local by default</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="ai" class="section alt">
+    <div class="wrap">
+      <h2>AI-driven testing</h2>
+      <p class="section-lead">I treat AI as a working part of the test process, not a gimmick. Each piece below exists in my Grafana suite, and each one is built so a wrong answer from a model cannot break a test run.</p>
+      <div class="ai-grid">
+        <div class="card"><h3>Exploratory testing agent</h3><p>An LLM agent drives a real browser through a small set of tools, explores the product and reports what it finds, the way a tester would on a first pass.</p></div>
+        <div class="card"><h3>AI failure analysis</h3><p>When a test fails, the error text, the URL and the page's accessibility snapshot go to a model that explains the likely cause, so triage starts with a hypothesis.</p></div>
+        <div class="card"><h3>AI run reports</h3><p>Allure results are turned into a readable HTML report with findings and suggested improvements. It works rule-based with no model at all, and gets richer when a model is available.</p></div>
+        <div class="card"><h3>AI-assisted development</h3><p>I use AI assistants to design and write code, then review it and prove it by running it: tests, CI and real failure output decide what is correct, not the model's confidence.</p></div>
+      </div>
+      <ul class="points ai-points">
+        <li><strong>Provider-agnostic:</strong> works with a local model through Ollama, any OpenAI-compatible endpoint, or the Anthropic API, and defaults to no provider so it costs nothing to run.</li>
+        <li><strong>Safe by design:</strong> a call budget caps usage, AI steps skip cleanly when no provider is set, and analysis never decides whether a test passes.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <p class="section-lead">Two projects I built end to end: one that tests a real product, and one that makes the command line easier to use.</p>
+
+      <article class="project">
+        <div class="project-text">
+          <p class="tag">AI-driven test automation</p>
+          <h3>Grafana Test Automation Suite</h3>
+          <p>A complete automated test suite for Grafana 13, written to cover real business flows rather than just a login page. It runs locally, in Docker and in GitHub Actions, and it is green on Chromium, Firefox and WebKit.</p>
+          <ul class="points">
+            <li><strong>107 desktop tests</strong> across UI and API: dashboards (create, edit, delete, import, variables, time range), folders, alert rules, users, roles, teams and folder permissions.</li>
+            <li><strong>Mobile web tests</strong> with Appium on an Android emulator (8 tests).</li>
+            <li><strong>Clean architecture:</strong> Page Object, Builder and Facade patterns, data-driven tests from CSV and SQLite, and a cleanup tracker so every test removes what it creates.</li>
+            <li><strong>Reporting:</strong> Allure reports with steps, traces and videos, plus an HTML report that analyses each run and suggests improvements.</li>
+            <li><strong>AI agents:</strong> an exploratory-testing agent, AI failure analysis and AI-written run summaries. They work with Ollama, any OpenAI-compatible endpoint or the Anthropic API, and everything still runs with no paid API and no AI provider at all.</li>
+            <li><strong>CI/CD:</strong> Docker image, GitHub Actions matrix across three browsers, and a scheduled nightly run.</li>
+          </ul>
+          <ul class="chips" aria-label="Technologies">
+            <li>Python</li><li>pytest</li><li>Playwright</li><li>Appium</li><li>Allure</li><li>LLM agents</li><li>Docker</li><li>GitHub Actions</li><li>SQLite</li>
+          </ul>
+          <p class="links"><a class="btn small" href="https://github.com/Gal-Peter/Grafana_Test_Automation_Suite" rel="noopener">View the code on GitHub</a></p>
+        </div>
+        <div class="shots">
+          <figure>
+            <a href="assets/grafana-ai-report.jpg"><img src="assets/grafana-ai-report.jpg" width="1400" height="1418" loading="lazy" alt="HTML report generated from a test run: totals, pass rate, results by feature and by browser, and suggested improvements"></a>
+            <figcaption>The generated run report: totals, results by feature and browser, and suggested improvements.</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/grafana-actions.jpg"><img src="assets/grafana-actions.jpg" width="1600" height="813" loading="lazy" alt="GitHub Actions run that passed on Chromium, Firefox and WebKit and then built a combined report"></a>
+            <figcaption>One GitHub Actions run: three browsers in parallel, then a combined report.</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/grafana-allure.jpg"><img src="assets/grafana-allure.jpg" width="1600" height="695" loading="lazy" alt="Allure report showing 8 of 8 mobile tests passed on an Android emulator"></a>
+            <figcaption>Allure report of the mobile suite: 8 of 8 passed on an Android emulator.</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-text">
+          <p class="tag">DevOps tooling</p>
+          <h3>DevOps Terminal Commander</h3>
+          <p>A desktop app that turns the commands I use every day into one-click buttons. Pick a command, fill in any missing values in a dialog, and the app runs it in your shell and streams the output back.</p>
+          <ul class="points">
+            <li><strong>Command library</strong> for Linux, Git, Docker and Kubernetes, with 25 Git commands alone.</li>
+            <li><strong>Parameter dialog:</strong> commands with placeholders such as <code>{commit_message}</code> or <code>{service_name}</code> open a focused form before anything runs.</li>
+            <li><strong>Built-in explanations:</strong> hover over any command to see what it does.</li>
+            <li><strong>Live console</strong> that shows the command output as it arrives.</li>
+            <li><strong>Two-process design:</strong> a sandboxed UI that talks to the Node.js core only through a context bridge (IPC).</li>
+          </ul>
+          <ul class="chips" aria-label="Technologies">
+            <li>Electron</li><li>Node.js</li><li>JavaScript</li><li>IPC</li><li>Git</li><li>Docker</li><li>Linux</li>
+          </ul>
+          <p class="links"><a class="btn small" href="https://github.com/Gal-Peter/devops-commander" rel="noopener">View the code on GitHub</a></p>
+        </div>
+        <div class="shots">
+          <figure>
+            <a href="assets/commander-git.jpg"><img src="assets/commander-git.jpg" width="1600" height="980" loading="lazy" alt="DevOps Terminal Commander showing the Git command list and live console output of git status"></a>
+            <figcaption>Git commands with the live console showing the output of <code>git status</code>.</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/commander-dialog.jpg"><img src="assets/commander-dialog.jpg" width="1600" height="973" loading="lazy" alt="Dialog asking for a service name before running a systemctl command"></a>
+            <figcaption>A command with a placeholder asks for its value before it runs.</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/commander-linux.jpg"><img src="assets/commander-linux.jpg" width="1600" height="982" loading="lazy" alt="Linux command list including ping, curl, tar, chown and systemctl"></a>
+            <figcaption>The Linux command library, with an explanation panel for the hovered command.</figcaption>
+          </figure>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="card"><h3>AI and LLMs</h3><ul class="chips"><li>AI agents</li><li>LLM prompt engineering</li><li>Tool calling</li><li>Ollama</li><li>OpenAI-compatible APIs</li><li>Anthropic API</li><li>AI-assisted development</li></ul></div>
+        <div class="card"><h3>Test automation</h3><ul class="chips"><li>Python</li><li>pytest</li><li>Playwright</li><li>Appium</li><li>Postman</li><li>Bruno</li><li>Allure</li></ul></div>
+        <div class="card"><h3>CI/CD and DevOps</h3><ul class="chips"><li>GitHub Actions</li><li>Jenkins</li><li>Docker</li><li>Kubernetes</li><li>Terraform</li><li>Bash</li><li>YAML</li><li>Linux</li></ul></div>
+        <div class="card"><h3>Monitoring and cloud</h3><ul class="chips"><li>Grafana</li><li>Prometheus</li><li>AWS</li><li>GCP</li></ul></div>
+        <div class="card"><h3>Web and scripting</h3><ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
+        <div class="card"><h3>Test management</h3><ul class="chips"><li>Jira</li><li>Confluence</li><li>HP ALM</li><li>Bugzilla</li><li>LoadRunner</li></ul></div>
+        <div class="card"><h3>Databases and platforms</h3><ul class="chips"><li>MS SQL Server</li><li>MySQL</li><li>Oracle PL/SQL</li><li>Windows</li><li>Android</li><li>iOS</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li>
+          <p class="when">2022 – 2025</p>
+          <h3>QA Specialist, Plasson Ltd</h3>
+          <p>Built and maintained automated regression suites in Python with pytest and Playwright. Planned and ran manual tests for the in-house MES system with Jira and Confluence. Led the move of label creation to a new cloud-based solution, from planning through production rollout and end-user support, and wrote the training material for new users.</p>
+        </li>
+        <li>
+          <p class="when">2011 – 2022</p>
+          <h3>QA Team Lead, NCR</h3>
+          <p>Led a team of 6 QA analysts across several projects: set tasks and goals, supported the team and took part in test execution. Raised delivery quality by training and mentoring analysts and adding quality gates to the testing lifecycle, and wrote the best-practice guides for end-to-end testing projects.</p>
+        </li>
+        <li>
+          <p class="when">2010 – 2011</p>
+          <h3>QA Engineer, WorldMate Inc.</h3>
+          <p>Wrote test plans and test design documents and executed test cases on client/server mobile and web applications. Tracked defects in Bugzilla and checked data integrity with MySQL.</p>
+        </li>
+        <li>
+          <p class="when">2007 – 2010</p>
+          <h3>QA Engineer, Motorola Solutions</h3>
+          <p>Ran stress and load tests with LoadRunner, verified data in MS SQL Server, and tested real-time embedded devices manually, reporting defects and verifying fixes.</p>
+        </li>
+      </ol>
+
+      <h2 class="sub">Education and certifications</h2>
+      <ul class="edu">
+        <li><span>2026</span>DevOps Engineer, RT College</li>
+        <li><span>2025</span>Full Stack Test Automation, Atid College</li>
+        <li><span>2015</span>ISTQB Certification, Sela College</li>
+        <li><span>2006</span>MSDST Certification, Hi Tech College</li>
+      </ul>
+      <p class="muted">Languages: Hebrew (native), English (native).</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="wrap contact">
+      <h2>Let's talk</h2>
+      <p class="section-lead">I am looking for a QA automation, SDET or AI-driven testing role where I can build and own test automation. The quickest way to reach me is email or LinkedIn.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:g.peter26@gmail.com">g.peter26@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/gal-peter-48a19b97" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/Gal-Peter" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year">2026</span> Gal Peter</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var btn = document.getElementById("theme");
+  var saved = null;
+  try { saved = localStorage.getItem("theme"); } catch (e) {}
+  if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved);
+
+  function isDark() {
+    var set = root.getAttribute("data-theme");
+    if (set) return set === "dark";
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  btn.addEventListener("click", function () {
+    var next = isDark() ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+  var y = document.getElementById("year");
+  if (y) y.textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
